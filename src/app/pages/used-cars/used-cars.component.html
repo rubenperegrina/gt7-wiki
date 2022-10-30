@@ -1,0 +1,19 @@
+<div class="container">
+  <h6 class="data-update text-center" *ngIf="dataUpdate">{{'used_cars.last_update' | translate}}{{dataUpdate}}{{'used_cars.last_update_format' | translate}}</h6>
+</div>
+<div class="car-container">
+    <p class="car" [ngClass]="{'carsold': car.state === 'soldout', 'carlimited' : car.state === 'limited', 'carnormal' : car.state === 'normal' }" *ngFor="let car of usedCars">
+    <img class="flag" [src]="car.region | flagImagePipe">
+    <!-- <img class="brand"[src]="car.manufacturer| lowercase | brandLogoPipe"> -->
+    <span class="manufacturer">{{car.manufacturer}}</span>
+    <span class="name">{{car.name}}</span>
+    <span class="credits">
+      <span class="cr">{{'used_cars.cr_label' | translate}}</span>
+       {{car.credits}}
+      </span>
+    <span class="limited" *ngIf="car.state === 'limited'">{{'used_cars.limited_stock_label' | translate}}</span>
+    <span class="normal" *ngIf="car.state === 'normal'">{{'used_cars.available_label' | translate}}</span>
+    <span class="days-remaining" *ngIf="car.state === 'limited'">{{car.maxestimatedays === 1 ? 'Last day available' : 'Available for ' + car.maxestimatedays + ' more day/s'}}</span>
+    <span class="soldout" *ngIf="car.state === 'soldout'">{{'used_cars.sold_out_label' | translate}}</span>
+  </p>
+</div>

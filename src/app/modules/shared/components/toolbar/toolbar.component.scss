@@ -1,0 +1,9 @@
+mat-toolbar {
+    background: linear-gradient(45deg, #0a267c 0%, #e00d23 100%);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+mat-toolbar h1 {
+    color: white;
+}

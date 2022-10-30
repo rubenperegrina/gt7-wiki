@@ -1,0 +1,3 @@
+<img [ngClass]="{'active': activeLang == 'es'}" (click)="cambiarLenguaje('es')" class="flag" [src]="'es' | flagImagePipe">
+<img [ngClass]="{'active': activeLang == 'en'}" (click)="cambiarLenguaje('en')" class="flag" [src]="'gb' | flagImagePipe">
+<img [ngClass]="{'active': activeLang == 'ad'}" (click)="cambiarLenguaje('ad')" class="flag" [src]="'ad' | flagImagePipe">

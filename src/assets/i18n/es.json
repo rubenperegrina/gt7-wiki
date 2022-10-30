@@ -1,0 +1,18 @@
+{
+  "selector" : {
+    "used_cars" : "Coches usados",
+    "legend_cars" : "Coches legendarios",
+    "daily_race" : "Carreras diarias"
+  },
+  "used_cars" : {
+    "last_update" : "Última actualización: ",
+    "last_update_format" : " (YY-MM-DD)",
+    "cr_label" : "Cr.",
+    "limited_stock_label" : "Stock limitado",
+    "available_label" : "Disponible",
+    "last_available_label" : "Último día disponible",
+    "available_for_label" : "Disponible para ",
+    "more_days_label" : " más día/s",
+    "sold_out_label" : "VENDIDO"
+  }
+}

@@ -1,0 +1,91 @@
+<div class="container">
+    <h6 class="data-update text-center" *ngIf="dataUpdate">Last updated: {{dataUpdate}} (YY-MM-DD)</h6>
+</div>
+<div class="dailyrace-container">
+    <div class="dailyrace" *ngFor="let race of dailyRaces; index as i">
+        <span class="racetitle">{{i+1}}</span>
+        <img class="logo" [src]="race.logo | trackImagePipe">
+        <img class="flag" [src]="race.region | flagImagePipe">
+        <span class="trackname">{{race.track}}</span>
+        <span class="racedetails">
+            <span class="racedetailsection times">
+                <span class="racedetaillabel timelabel">Time required: </span>
+                <span class="racedetailcontent time">{{race.time}} <small>Min(s)</small></span><br>
+                <span class="racedetaillabel schedulelabel">Race schedule: </span>
+                <span class="racedetailcontent schedule" *ngFor="let schedule of race.schedule">
+                    XX:{{schedule}}
+            </span>
+        </span>
+        <span class="racedetailsection raceinfo">
+            <div class="racedetailheader raceinfo">Race Information: </div>
+            <div class="racedetailrow">
+                <span class="racedetaillabel lapslabel">No. of laps: </span>
+                <span class="racedetailcontent laps">{{race.laps}}</span>
+                <span class="racedetaillabel carslabel"> No. of cars: </span>
+                <span class="racedetailcontent cars">{{race.cars}}</span>
+                <span class="racedetaillabel starttypelabel"> Start type: </span>
+                <span class="racedetailcontent starttype">{{race.starttype | titlecase}}</span>
+            </div>
+            <div class="racedetailrow">
+                <span class="racedetaillabel fueltyrelabel">Fuel consumption / Tyre wear</span>
+                <span class="racedetaillabel fuelconsfinallabel">Final: </span>
+                <span class="racedetailcontent fuelcons">{{race.fuelcons}}X </span>
+                <span class="racedetaillabel tyrewearfinallabel">Final: </span>
+                <span class="racedetailcontent tyrewear">{{race.tyrewear}}X</span>
+            </div>
+        </span>
+
+        <span class="racedetailsection regulations">
+            <div class="racedetailheader regulations">Regulations</div>
+            <div class="racedetailrow">
+                <span class="racedetaillabel categorylabel">Car Type: </span>
+                <span class="racedetailcontent category">{{race.cartags ? race.cartags : 'None'}}</span>
+            </div>
+            <div class="racedetailrow">
+                <span class="racedetaillabel categorylabel">PP: </span>
+                <span class="racedetailcontent category">{{race.pplimit ? race.pplimit + ' or less' : 'None'}}</span>
+            </div>
+            <div class="racedetailrow">
+                <span class="racedetaillabel nitrouslabel">Nitrous: </span>
+                <span class="racedetailcontent nitrous">{{race.nitrousban ? 'Avalaible' : 'Disabled'}}</span>
+            </div>
+            <div class="racedetailrow">
+                <span class="racedetaillabel">Tyre Choice: </span>
+                <span class="racedetailcontent" *ngFor="let tyre of race.tyres">
+                    <div class="tyre" [ngClass]="tyre">{{tyre}}</div>
+                </span>
+            </div>
+            <div class="racedetailrow" *ngIf="race.requiredtyres">
+                <span class="racedetaillabel">Required tyre type: </span>
+                <span class="racedetailcontent" *ngFor="let requiredTyre of race.requiredtyres">
+                    <div class="tyre" [ngClass]="requiredTyre">{{requiredTyre}}</div>
+                </span>
+            </div>
+        </span>
+        <span class="racedetailsection racesettings">
+            <div class="racedetailheader racesettings">Race Settings</div>
+            <div class="racedetailrow">
+                <span class="racedetaillabel boplabel">BoP/Tuning forbidden: </span>
+                <span class="racedetailcontent bop">{{race.bop ? 'On' : 'Off'}}</span>
+                <span class="racedetaillabel speclabel">Car settings: </span>
+                <span class="racedetailcontent spec">{{race.carsettings_specified ? 'Specified' : 'Allowed'}}</span>
+            </div><div class="racedetailrow">
+                <span class="racedetaillabel garagecarlabel">Car used: </span>
+                <span class="racedetailcontent garagecar">{{race.garagecar ? 'Garage car' : 'Garage car, Event-Specified car'}}</span>
+            </div><div class="racedetailrow">
+                <span class="racedetaillabel damagelabel">Mechanical damage: </span>
+                <span class="racedetailcontent damage">{{race.damage | titlecase}}</span>
+            </div><div class="racedetailrow">
+                <span class="racedetaillabel shortcutpenlabel">Shortcut penalty: </span>
+                <span class="racedetailcontent shortcutpen">{{race.shortcutpen ? 'Light' : 'Heavy'}}</span>
+                <span class="racedetaillabel collisionpenlabel">Car collision penalty: </span>
+                <span class="racedetailcontent collisionpen">{{race.carcollisionpen ? 'Enabled' : 'Disabled'}}</span>
+            </div><div class="racedetailrow">
+                <span class="racedetaillabel pitlanepenlabel">Pit lane line cutting penalty: </span>
+                <span class="racedetailcontent pitlanepen">{{race.pitlanepen ? 'Enabled' : 'Disabled'}}</span>
+            </div>
+        </span>
+        <div class="boprace" *ngIf="race.bop">BoP Race</div>
+        </span>
+    </div>
+</div>
