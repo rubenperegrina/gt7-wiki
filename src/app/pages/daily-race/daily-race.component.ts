@@ -13,11 +13,11 @@ export class DailyRaceComponent {
   dataUpdate!: string;
 
   constructor(
-    private _apiService: ApiService
+    public _apiService: ApiService
   ) { 
     setTimeout(() => {
       this.dailyRaces = this._apiService.data?.dailyrace?.races;
-      this.dataUpdate = this._apiService.data?.legend?.date;
+      this.dataUpdate = this._apiService.data?.dailyrace?.date;
     })
   }
 }

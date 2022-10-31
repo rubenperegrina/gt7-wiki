@@ -17,7 +17,7 @@ export class UsedCarsComponent {
   ) { 
     setTimeout(() => {
       this.usedCars = this._apiService.data?.used?.cars
-      this.dataUpdate = this._apiService.data?.legend?.date;
+      this.dataUpdate = this._apiService.data?.used?.date;
     })
   }
 }

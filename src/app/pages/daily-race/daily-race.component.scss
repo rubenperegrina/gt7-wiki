@@ -1,7 +1,3 @@
-// mat-card {
-//     background-color: grey;
-//   }
-
 .dailyrace-container {
   width: 100%;
   display: flex;
@@ -15,7 +11,7 @@
   border-radius: 15px;
   background-color: #0c1316;
   position: relative;
-  height: 750px;
+  height: 850px;
   min-width: 380px;
   max-width: 380px;
   width: 380px;
@@ -158,8 +154,8 @@ small {
   color: #000;
   width: auto;
   position: absolute;
-  top: 15px;
-  right: 0px;
+  top: -185px;
+  right: -18px;
   width: 80px;
   height: 20px;
   font-weight: 700;

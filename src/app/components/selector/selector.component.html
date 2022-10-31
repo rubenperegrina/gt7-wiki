@@ -1,5 +1,5 @@
 <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-    <mat-button-toggle [routerLink]="'/used-cars'" routerLinkActive="active-link">{{'selector.used_cars' | translate}}</mat-button-toggle>
-    <mat-button-toggle [routerLink]="'/daily-race'" routerLinkActive="active-link">{{'selector.daily_race' | translate}}</mat-button-toggle>
-    <mat-button-toggle [routerLink]="'/legend-cars'" routerLinkActive="active-link">{{'selector.legend_cars' | translate}}</mat-button-toggle>
+    <mat-button-toggle [routerLink]="'/used-cars'" routerLinkActive="active-link">{{'selector.used_cars' | translate | slice:0:13}}</mat-button-toggle>
+    <mat-button-toggle [routerLink]="'/daily-race'" routerLinkActive="active-link">{{'selector.daily_race' | translate | slice:0:13}}</mat-button-toggle>
+    <mat-button-toggle [routerLink]="'/legend-cars'" routerLinkActive="active-link">{{'selector.legend_cars' | translate | slice:0:13}}</mat-button-toggle>
 </mat-button-toggle-group>

@@ -1,5 +1,5 @@
-<div class="container">
-    <h6 class="data-update text-center" *ngIf="dataUpdate">Last updated: {{dataUpdate}} (YY-MM-DD)</h6>
+<div class="container" *ngIf="dataUpdate">
+    <h6 class="data-update text-center">{{'legend_cars.last_update' | translate}}{{dataUpdate | formatDatePipe}}</h6>
 </div>
 <div class="car-container" *ngIf="legendCars">
     <div class="car" [ngClass]="{'carsold': car.state === 'soldout', 'carlimited' : car.state === 'limited', 'carnormal' : car.state === 'normal' }" *ngFor="let car of legendCars">
@@ -8,12 +8,13 @@
         <span class="manufacturer">{{car.manufacturer}}</span>
         <span class="name">{{car.name}}</span>
         <span class="credits">
-            <span class="cr">Cr.</span>
+            <span class="cr">{{'legend_cars.cr_label' | translate}}</span>
              {{car.credits}}
-            </span>
-        <span class="limited" *ngIf="car.state === 'limited'">Limited Stock</span>
-        <span class="normal" *ngIf="car.state === 'normal'">Available</span>
-        <span class="days-remaining" *ngIf="car.state === 'limited'">{{car.maxestimatedays === 1 ? 'Lasta day available' : 'Available for ' + car.maxestimatedays + ' more day/s'}}</span>
-        <span class="soldout" *ngIf="car.state === 'soldout'">SOLD OUT</span>
+        </span>
+        <span class="new" *ngIf="car.new">{{'legend_cars.new_label' | translate}}</span>
+        <span class="limited" *ngIf="car.state === 'limited'">{{'legend_cars.limited_stock_label' | translate}}</span>
+        <span class="normal" *ngIf="car.state === 'normal'">{{'legend_cars.available_label' | translate}}</span>
+        <span [ngClass]="{'days-estimate': car.maxestimatedays < 0, 'days-remaining' : car.maxestimatedays > 0 }" *ngIf="car.state === 'limited'">{{car.maxestimatedays > 0 ? 'Available for ' + car.maxestimatedays + ' more day/s' : 'No hay una estimación disponible '}}</span>
+        <span class="soldout" *ngIf="car.state === 'soldout'">{{'legend_cars.sold_out_label' | translate}}</span>
     </div>
 </div>

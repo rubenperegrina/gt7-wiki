@@ -8,14 +8,14 @@ import { TranslateService } from '@ngx-translate/core';
 })
 
 export class TranslationComponent {
-  public activeLang = 'en';
+  activeLang: string = 'en';
   constructor(
     private translate: TranslateService
   ) {
     this.translate.setDefaultLang(this.activeLang);
   }
 
-  public cambiarLenguaje(lang: string) {
+  cambiarLenguaje(lang: string) {
     this.activeLang = lang;
     this.translate.use(lang);
   }

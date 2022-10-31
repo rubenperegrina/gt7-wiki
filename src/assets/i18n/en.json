@@ -1,4 +1,7 @@
 {
+  "toolbar" : {
+    "title" : "GT7 Wiki"
+  },
   "selector" : {
     "used_cars" : "Used cars",
     "legend_cars" : "Legend cars",
@@ -6,7 +9,6 @@
   },
   "used_cars" : {
     "last_update" : "Last updated: ",
-    "last_update_format" : " (YY-MM-DD)",
     "cr_label" : "Cr.",
     "limited_stock_label" : "Limited Stock",
     "available_label" : "Available",
@@ -14,5 +16,64 @@
     "available_for_label" : "Available for ",
     "more_days_label" : " more day/s",
     "sold_out_label" : "SOLD OUT"
-  }
+  },
+  "daily_race" : {
+    "last_update" : "Last updated: ",
+    "time_required_label" : "Time required: ",
+    "mins_label" : "Min(s)",
+    "race_schedule_label" : "Race schedule: ",
+    "xx_label" : "XX:",
+    "race_information_label" : "Race Information: ",
+    "no_laps_label" : "No. of laps: ",
+    "no_cars_label" : " No. of cars: ",
+    "start_type_label" : " Start type: ",
+    "fuel_tyre_label" : "Fuel consumption / Tyre wear: ",
+    "final_label" : "Final: ",
+    "x_label" : "X ",
+    "regulations_label" : "Regulations",
+    "car_type_label" : "Car Type: ",
+    "none_label" : "None",
+    "pp_label" : "PP: ",
+    "nitrous_label" : "Nitrous: ",
+    "or_less_label" : " or less",
+    "available_label" : "Available",
+    "disabled_label" : "Disabled",
+    "tyre_choice_label" : "Tyre Choice: ",
+    "required_tyre_type_label" : "Required tyre type: ",
+    "race_settings_label" : "Race Settings",
+    "bop_tuning_forbidden_label" : "BoP/Tuning forbidden: ",
+    "bop_on_label" : "On",
+    "bop_off_label" : "Off",
+    "car_settings_label" : "Car settings: ",
+    "specified_label" : "Specified",
+    "allowed_label" : "Allowed",
+    "car_used_label" : "Car used: ",
+    "garage_car_label" : "Garage car",
+    "garage_car_event_specified_label" : "Garage car, Event-Specified car",
+    "mechanical_damage_label" : "Mechanical damage: ",
+    "shortcut_penalty_label" : "Shortcut penalty: ",
+    "penalty_light_label" : "Light",
+    "penalty_heavy_label" : "Heavy",
+    "car_collision_penalty_label" : "Car collision penalty: ",
+    "enabled_label" : "Enabled",
+    "pit_lane_penalty_label" : "Pit lane line cutting penalty: ",
+    "bop_race_label" : "BoP Race"
+  },
+  "legend_cars": {
+    "last_update" : "Last updated: ",
+    "cr_label" : "Cr.",
+    "limited_stock_label" : "Limited Stock",
+    "available_label" : "Available",
+    "last_day_available_label" : "Last day available",
+    "available_for_label" : "Available for ",
+    "more_days_label" : "more day/s",
+    "sold_out_label" : "SOLD OUT",
+    "new_label": "NEW"
+  },
+  "about" : {
+    "text1": "This website has been created with Angular version 13.3.0, the only purpose is educational and informative, it has no relationship with Poliphony Digital. To obtain the data, the api of:",
+    "text2": "The data is updated daily with the latest information on used cars, legendary cars and races available from Gran Turismo 7. The code is available at:",
+    "url1": "https://ddm999.github.io/gt7info/data.json",
+    "url2": "https://github.com/rubenperegrina/gt7-wiki"
+    }
 }

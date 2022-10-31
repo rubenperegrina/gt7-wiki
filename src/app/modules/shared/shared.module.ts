@@ -8,6 +8,8 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
 import { FlagImagePipe } from '@app/pipes/flag-image.pipe';
+import { FormatDatePipe } from '@app/pipes/format-date-pipe';
+import { FooterComponent } from './components/footer/footer.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -17,7 +19,9 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     ToolbarComponent,
     TranslationComponent,
-    FlagImagePipe
+    FlagImagePipe,
+    FormatDatePipe,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -33,9 +37,11 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   exports: [
     ToolbarComponent,
+    FooterComponent,
     TranslationComponent,
     FlagImagePipe,
-    TranslateModule
+    TranslateModule,
+    FormatDatePipe
   ]
 })
 export class SharedModule { }

@@ -15,6 +15,7 @@ import { SelectorComponent } from './components/selector/selector.component';
 import { TrackImagePipe } from './pipes/track-image.pipe';
 import { BrandLogoPipe } from './pipes/brand-logo.pipe';
 import { FlagImagePipe } from './pipes/flag-image.pipe';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FlagImagePipe } from './pipes/flag-image.pipe';
     LegendCarsComponent,
     SelectorComponent,
     TrackImagePipe,
-    BrandLogoPipe
+    BrandLogoPipe,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
