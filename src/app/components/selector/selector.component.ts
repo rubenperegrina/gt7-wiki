@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faCar, faGaugeHigh, faCarRear, faFlagCheckered } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-selector',
@@ -6,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./selector.component.scss']
 })
 export class SelectorComponent implements OnInit {
-
+  faCar = faCar;
+  faGaugeHigh = faGaugeHigh;
+  faCarRear = faCarRear;
+  faFlagCheckered = faFlagCheckered;
   constructor() { }
 
   ngOnInit(): void {

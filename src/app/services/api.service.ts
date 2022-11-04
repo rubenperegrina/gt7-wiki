@@ -1,8 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Data } from '@app/models/data.model';
+import { EngineSwap } from '@app/models/engine-swap.model';
 import { environment } from '@env/environment';
-import { Observable, tap } from 'rxjs';
+import { Observable, of, tap } from 'rxjs';
+import engineswap from 'src/assets/json/engine-swap.json';
 
 @Injectable({
   providedIn: 'root'
@@ -21,5 +23,9 @@ export class ApiService {
         }  
       )
     );
+  }
+
+  getEngineSwaps(): Observable<any> {
+    return of(engineswap);
   }
 }

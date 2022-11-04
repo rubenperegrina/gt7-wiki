@@ -15,9 +15,7 @@ export class DailyRaceComponent {
   constructor(
     public _apiService: ApiService
   ) { 
-    setTimeout(() => {
       this.dailyRaces = this._apiService.data?.dailyrace?.races;
       this.dataUpdate = this._apiService.data?.dailyrace?.date;
-    })
   }
 }

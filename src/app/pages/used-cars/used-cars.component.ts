@@ -15,9 +15,7 @@ export class UsedCarsComponent {
   constructor(
     private _apiService: ApiService
   ) { 
-    setTimeout(() => {
       this.usedCars = this._apiService.data?.used?.cars
       this.dataUpdate = this._apiService.data?.used?.date;
-    })
   }
 }

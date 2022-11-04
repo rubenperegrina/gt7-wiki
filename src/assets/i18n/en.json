@@ -5,7 +5,8 @@
   "selector" : {
     "used_cars" : "Used cars",
     "legend_cars" : "Legend cars",
-    "daily_race" : "Daily race"
+    "daily_race" : "Daily race",
+    "engine_swap" : "Engine swap"
   },
   "used_cars" : {
     "last_update" : "Last updated: ",
@@ -70,10 +71,20 @@
     "sold_out_label" : "SOLD OUT",
     "new_label": "NEW"
   },
+  "engine_swap": {
+    "last_update" : "Last updated: ",
+    "available_car_label": " available car",
+    "available_cars_label": " available cars"
+  },
   "about" : {
-    "text1": "This website has been created with Angular version 13.3.0, the only purpose is educational and informative, it has no relationship with Poliphony Digital. To obtain the data, the api of:",
-    "text2": "The data is updated daily with the latest information on used cars, legendary cars and races available from Gran Turismo 7. The code is available at:",
+    "text1": "This website has been created with Angular version 13.3.0, the only purpose is educational and informative, it has no relationship with Poliphony Digital. To obtain the data api:",
+    "text2": "The engine swap information is updated manually and has been obtained from:",
+    "text3": "The data is updated daily with the latest information on used cars, legendary cars and races available from Gran Turismo 7. The code is available at:",
     "url1": "https://ddm999.github.io/gt7info/data.json",
-    "url2": "https://github.com/rubenperegrina/gt7-wiki"
+    "url1_label": "ddm999.github.io/gt7info/data.json",
+    "url2": "https://www.gtplanet.net/forum/threads/gran-turismo-7-engine-swap-compatibility-list.405033/",
+    "url2_label": "gtplanet.net",
+    "url3": "https://github.com/rubenperegrina/gt7-wiki",
+    "url3_label": "github.com/rubenperegrina/gt7-wiki"
     }
 }

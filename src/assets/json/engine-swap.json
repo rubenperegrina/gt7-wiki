@@ -1,0 +1,194 @@
+{
+    "last_update": "2022-11-04",
+    "engine_swaps": [
+      {
+        "engine": "R5-20vT-Quattro-Pikes",
+        "source_car": "Audi Sport quattro S1 Pikes Peak '87",
+        "available_cars": [
+          "Volkswagen Golf I GTI '83"
+        ]
+      },
+      {
+        "engine": "BYH-R8",
+        "source_car": "Audi R8 4.2 '07",
+        "available_cars": [
+          "Audi TTS Coupe '14",
+          "Toyota MR2 GT-S '97"
+        ]
+      },
+      {
+        "engine": "P65B44-Z4",
+        "source_car": "BMW Z4 GT3 '11",
+        "available_cars": [
+          "BMW 3.0 CSL '73",
+          "BMW M3 '03"
+        ]
+      },
+      {
+        "engine": "LT4-Camaro",
+        "source_car": "Chevrolet Camaro ZL1 1LE Package '18",
+        "available_cars": [
+          "TVR Tuscan Speed 6 '00"
+        ]
+      },
+      {
+        "engine": "LS9-Corvette",
+        "source_car": "Chevrolet Corvette ZR1 (C6) '09",
+        "available_cars": [
+          "Pontiac Firebird Trans Am '78"
+        ]
+      },
+      {
+        "engine": "LT1-Corvette",
+        "source_car": "Chevrolet Corvette Stingray (C7) '14",
+        "available_cars": [
+          "Mazda Roadster S (ND) '15"
+        ]
+      },
+      {
+        "engine": "LT5-Corvette-C7",
+        "source_car": "Chevrolet Corvette C7 ZR1 '19",
+        "available_cars": [
+          "Chevrolet Corvette Convertible (C3) '69",
+          "Chevrolet Corvette Stingray (C3) '69",
+          "Nissan Silvia K's Type S (S14) '94",
+          "Subaru BRZ STI Sport '18",
+          "Toyota 86 GT'Limited' '16"
+        ]
+      },
+      {
+        "engine": "Hellcat-Charger",
+        "source_car": "Dodge Charger SRT Hellcat '15",
+        "available_cars": [
+          "Dodge Challenger R/T '70",
+          "Plymouth Superbird '70"
+        ]
+      },
+      {
+        "engine": "F136F-458",
+        "source_car": "Ferrari 458 Italia '09",
+        "available_cars": [
+          "Alfa Romeo 4C '14"
+        ]
+      },
+      {
+        "engine": "V8-Ford-GT-LM-Test",
+        "source_car": "Ford GT LM Spec II Test Car",
+        "available_cars": [
+          "Ford Focus RS '18"
+        ]
+      },
+      {
+        "engine": "Coyote-5.0L-Mustang",
+        "source_car": "Ford Mustang GT '15",
+        "available_cars": [
+          "DeTomaso Pantera '71",
+          "Ford Mustang Mach 1 '71"
+        ]
+      },
+      {
+        "engine": "Voodoo-5.2L-GT350R",
+        "source_car": "Ford Shelby GT350R '16",
+        "available_cars": [
+          "1932 Ford Roadster Hot Rod"
+        ]
+      },
+      {
+        "engine": "K20C1-Civic-'20",
+        "source_car": "Honda Civic Type R Limited Edition (FK8) '20",
+        "available_cars": [
+          "Honda Beat '91",
+          "Honda Civic Type R (EK) '98",
+          "Honda Integra Type R (DC2) '98",
+          "Mini-Cooper 'S' '65"
+        ]
+      },
+      {
+        "engine": "3UZ-FE-SC430",
+        "source_car": "Lexus SC430 GT500 '08",
+        "available_cars": [
+          "Toyota Crown Athlete G '13",
+          "Toyota Tundra TRD Pro '19"
+        ]
+      },
+      {
+        "engine": "R26B-787B",
+        "source_car": "Mazda 787B '91",
+        "available_cars": [
+          "Mazda RX-7 Spirit R Type A (FD) '02",
+          "Mazda RX-8 Spirit R '12"
+        ]
+      },
+      {
+        "engine": "13B-REW-RX-7",
+        "source_car": "Mazda RX-7 Spirit R Type A (FD) '02",
+        "available_cars": [
+          "Mazda Eunos Roadster (NA Special Package) '89",
+          "Suzuki Cappuccino (EA11R) '91"
+        ]
+      },
+      {
+        "engine": "VK45DE-GT-R",
+        "source_car": "Nissan GT-R GT500 '08",
+        "available_cars": [
+          "Nissan Fairlady Z (Z34) '08"
+        ]
+      },
+      {
+        "engine": "VR38DETT-GT-R-NISMO",
+        "source_car": "Nissan GT-R NISMO '17",
+        "available_cars": [
+          "Lancia Delta HF Integrale Evoluzione '91",
+          "Nissan 180SX Type X '96",
+          "Nissan Fairlady Z 300ZX TT 2seater '89"
+        ]
+      },
+      {
+        "engine": "SR20DET-Silvia",
+        "source_car": "Nissan SILVIA spec-R AERO (S15) '02",
+        "available_cars": [
+          "Nissan Silvia K's Dia Selection (S13) '90"
+        ]
+      },
+      {
+        "engine": "M64/03-911",
+        "source_car": "Porsche 911 Carrera RS (964) '92",
+        "available_cars": [
+          "Volkswagen 1200 '66",
+          "Volkswagen Sambabus Typ 2 '62"
+        ]
+      },
+      {
+        "engine": "LS7-Rampage",
+        "source_car": "Roadster Shop Rampage",
+        "available_cars": [
+          "DeLorean S2 '04",
+          "Amuse NISMO 380RS Super Leggera"
+        ]
+      },
+      {
+        "engine": "LS7-BRZ",
+        "source_car": "Subaru BRZ Drift Car '17",
+        "available_cars": [
+          "Nissan Silvia Q's (S13) '88"
+        ]
+      },
+      {
+        "engine": "H25A-Escudo",
+        "source_car": "Suzuki V6 Escudo Pikes Peak Special spec.98",
+        "available_cars": [
+          "Mitsubishi Lancer Evolution Final '15"
+        ]
+      },
+      {
+        "engine": "2JZ-GTE-Supra",
+        "source_car": "Toyota SUPRA RZ '97",
+        "available_cars": [
+          "Nissan SILVIA spec-R AERO (S15) '02",
+          "Subaru BRZ S '21",
+          "Toyota GR86 RZ '21",
+          "Toyota GR Yaris RZ 'High performance' '20"
+        ]
+      }
+    ]
+  }

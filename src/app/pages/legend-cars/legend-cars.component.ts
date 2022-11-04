@@ -15,9 +15,7 @@ export class LegendCarsComponent {
   constructor(
     private _apiService: ApiService
   ) { 
-    setTimeout(() => {
       this.legendCars = this._apiService.data?.legend?.cars;
       this.dataUpdate = this._apiService.data?.legend?.date;
-    })
   }
 }

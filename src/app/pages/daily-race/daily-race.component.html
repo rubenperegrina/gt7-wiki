@@ -1,6 +1,7 @@
 <div class="container" *ngIf="dataUpdate">
     <h6 class="data-update text-center" *ngIf="dataUpdate">{{'daily_race.last_update' | translate}}{{dataUpdate | formatDatePipe}}</h6>
 </div>
+<h2 class="title text-center">{{'selector.daily_race' | translate}}</h2>
 <div class="dailyrace-container" *ngIf="dailyRaces">
     <div class="dailyrace" *ngFor="let race of dailyRaces; index as i">
         <span class="racetitle">{{i+1}}</span>

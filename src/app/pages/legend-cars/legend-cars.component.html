@@ -1,6 +1,8 @@
 <div class="container" *ngIf="dataUpdate">
     <h6 class="data-update text-center">{{'legend_cars.last_update' | translate}}{{dataUpdate | formatDatePipe}}</h6>
 </div>
+<h2 class="title text-center">{{'selector.legend_cars' | translate}}</h2>
+
 <div class="car-container" *ngIf="legendCars">
     <div class="car" [ngClass]="{'carsold': car.state === 'soldout', 'carlimited' : car.state === 'limited', 'carnormal' : car.state === 'normal' }" *ngFor="let car of legendCars">
         <img class="flag" [src]="car.region | flagImagePipe">
