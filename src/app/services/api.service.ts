@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Data } from '@app/models/data.model';
-import { EngineSwap } from '@app/models/engine-swap.model';
 import { environment } from '@env/environment';
 import { Observable, of, tap } from 'rxjs';
 import engineswap from 'src/assets/json/engine-swap.json';
