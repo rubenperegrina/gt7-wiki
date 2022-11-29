@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faCar, faCarRear, faFlagCheckered, faGaugeHigh } from '@fortawesome/free-solid-svg-icons';
+import { faCar, faGaugeHigh, faCarRear, faFlagCheckered } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-selector',
