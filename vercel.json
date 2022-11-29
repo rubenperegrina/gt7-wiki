@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "public": true,
+    "name": "angular-universal",
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/api" }
+    ],
+    "functions": {
+      "api/index.js": {
+        "includeFiles": "dist/GT7-WIKI/browser/**"
+      }
+    }
+  }
