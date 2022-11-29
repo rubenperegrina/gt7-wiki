@@ -32,7 +32,6 @@ import { TrackImagePipe } from './pipes/track-image.pipe';
     EngineSwapComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     RouterModule,
