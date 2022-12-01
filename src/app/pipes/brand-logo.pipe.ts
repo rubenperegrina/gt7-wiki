@@ -2,6 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'brandLogoPipe',
+  standalone: true
 })
 export class BrandLogoPipe implements PipeTransform {
   transform(value: string): string {

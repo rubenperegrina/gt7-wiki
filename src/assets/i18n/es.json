@@ -77,7 +77,7 @@
     "available_cars_label": " coches disonibles"
   },
   "about" : {
-    "text1": "Esta página ha sido creada con la versión 13.3.0 de Angular, el único fin es educativo e informativo, no tiene ninguna relación con Poliphony Digital.Para obtener los datos se ha utilizado la api de:",
+    "text1": "Esta página ha sido creada con la versión 15 de Angular, el único fin es educativo e informativo, no tiene ninguna relación con Poliphony Digital.Para obtener los datos se ha utilizado la api de:",
     "text2": "La información de cambios de motor se actualiza de manera manual y se obtiene de:",
     "text3": "Los datos se van actualizando diariamente con la última información de coches usados, coches legendarios y carreras disponibles de Gran Turismo 7. El código está disponible en:",
     "url1": "https://ddm999.github.io/gt7info/data.json",

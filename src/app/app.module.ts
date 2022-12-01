@@ -1,45 +1,35 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterModule } from '@angular/router';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
-import { MaterialModule } from './modules/material/material.module';
-
 import { AppComponent } from './app.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { SelectorComponent } from './components/selector/selector.component';
-import { SharedModule } from './modules/shared/shared.module';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { AboutComponent } from './pages/about/about.component';
-import { DailyRaceComponent } from './pages/daily-race/daily-race.component';
-import { EngineSwapComponent } from './pages/engine-swap/engine-swap.component';
-import { LegendCarsComponent } from './pages/legend-cars/legend-cars.component';
-import { UsedCarsComponent } from './pages/used-cars/used-cars.component';
 
-import { BrandLogoPipe } from './pipes/brand-logo.pipe';
-import { TrackImagePipe } from './pipes/track-image.pipe';
-
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 @NgModule({
-  declarations: [
-    AppComponent,
-    DailyRaceComponent,
-    UsedCarsComponent,
-    LegendCarsComponent,
-    SelectorComponent,
-    TrackImagePipe,
-    BrandLogoPipe,
-    AboutComponent,
-    EngineSwapComponent
-  ],
+  declarations: [AppComponent],
   imports: [
+    FooterComponent,
+    AboutComponent,
+    ToolbarComponent,
+    SelectorComponent,
     AppRoutingModule,
     BrowserAnimationsModule,
-    RouterModule,
-    SharedModule,
-    MaterialModule,
-    HttpClientModule,
-    FontAwesomeModule
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

@@ -1,12 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { EngineSwap } from '@app/models/engine-swap.model';
 import { ApiService } from '@app/services/api.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCar, faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-engine-swap',
   templateUrl: './engine-swap.component.html',
-  styleUrls: ['./engine-swap.component.scss']
+  styleUrls: ['./engine-swap.component.scss'],
+  standalone: true,
+  imports: [CommonModule, FontAwesomeModule, TranslateModule]
 })
 export class EngineSwapComponent implements OnInit {
   faCar = faCar;

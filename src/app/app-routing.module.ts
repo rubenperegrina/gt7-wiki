@@ -8,19 +8,23 @@ import { UsedCarsComponent } from './pages/used-cars/used-cars.component';
 const routes: Routes = [
   {
     path: 'used-cars',
-    component: UsedCarsComponent
+    component: UsedCarsComponent,
+    title: 'Used cars'
   },
   {
     path: 'daily-race',
-    component: DailyRaceComponent
+    component: DailyRaceComponent,
+    title: 'Daily race'
   },
   {
     path: 'legend-cars',
-    component: LegendCarsComponent
+    component: LegendCarsComponent,
+    title: 'Legend cars'
   },
   {
     path: 'engine-swap',
-    component: EngineSwapComponent
+    component: EngineSwapComponent,
+    title: 'Engine swap'
   },
   { path: '', pathMatch: 'full', redirectTo: 'engine-swap' },
   { path: '**', pathMatch: 'full', redirectTo: 'engine-swap' },

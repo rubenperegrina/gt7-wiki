@@ -7,10 +7,10 @@ import { ApiService } from './services/api.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  
+
   constructor(
     private _apiService: ApiService
-  ) { this.getData();}
+  ) { this.getData(); }
 
   getData() {
     this._apiService.getData().subscribe();

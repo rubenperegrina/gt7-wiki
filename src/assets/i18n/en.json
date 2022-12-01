@@ -77,7 +77,7 @@
     "available_cars_label": " available cars"
   },
   "about" : {
-    "text1": "This website has been created with Angular version 13.3.0, the only purpose is educational and informative, it has no relationship with Poliphony Digital. To obtain the data api:",
+    "text1": "This website has been created with Angular version 15, the only purpose is educational and informative, it has no relationship with Poliphony Digital. To obtain the data api:",
     "text2": "The engine swap information is updated manually and has been obtained from:",
     "text3": "The data is updated daily with the latest information on used cars, legendary cars and races available from Gran Turismo 7. The code is available at:",
     "url1": "https://ddm999.github.io/gt7info/data.json",
