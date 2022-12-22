@@ -1,13 +1,14 @@
-<!-- <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-    <mat-button-toggle [routerLink]="'/used-cars'" routerLinkActive="active-link">{{'selector.used_cars' | translate | slice:0:13}}</mat-button-toggle>
-    <mat-button-toggle [routerLink]="'/daily-race'" routerLinkActive="active-link">{{'selector.daily_race' | translate | slice:0:13}}</mat-button-toggle>
-    <mat-button-toggle [routerLink]="'/legend-cars'" routerLinkActive="active-link">{{'selector.legend_cars' | translate | slice:0:13}}</mat-button-toggle>
-    <mat-button-toggle [routerLink]="'/engine-swap'" routerLinkActive="active-link">{{'selector.engine-swap' | translate | slice:0:13}}</mat-button-toggle>
-</mat-button-toggle-group> -->
-
 <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-    <mat-button-toggle [routerLink]="'/engine-swap'" routerLinkActive="active-link"><fa-icon [icon]="faGaugeHigh" size="lg"></fa-icon></mat-button-toggle>
-    <mat-button-toggle [routerLink]="'/used-cars'" routerLinkActive="active-link"><fa-icon [icon]="faCar" size="lg"></fa-icon></mat-button-toggle>
-    <mat-button-toggle [routerLink]="'/daily-race'" routerLinkActive="active-link"><fa-icon [icon]="faFlagCheckered" size="lg"></fa-icon></mat-button-toggle>
-    <mat-button-toggle [routerLink]="'/legend-cars'" routerLinkActive="active-link"><fa-icon [icon]="faCarRear" size="lg"></fa-icon></mat-button-toggle>
+  <mat-button-toggle routerLink="engine-swap" routerLinkActive="active-link"
+    ><fa-icon [icon]="faGaugeHigh" size="lg"></fa-icon
+  ></mat-button-toggle>
+  <mat-button-toggle routerLink="used-cars" routerLinkActive="active-link"
+    ><fa-icon [icon]="faCar" size="lg"></fa-icon
+  ></mat-button-toggle>
+  <mat-button-toggle routerLink="daily-race" routerLinkActive="active-link"
+    ><fa-icon [icon]="faFlagCheckered" size="lg"></fa-icon
+  ></mat-button-toggle>
+  <mat-button-toggle routerLink="legend-cars" routerLinkActive="active-link"
+    ><fa-icon [icon]="faCarRear" size="lg"></fa-icon
+  ></mat-button-toggle>
 </mat-button-toggle-group>

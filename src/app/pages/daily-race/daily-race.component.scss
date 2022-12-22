@@ -64,7 +64,8 @@
   color: #667176;
 }
 
-.dailyrace .racedetailcontent, .dailyrace .specifiedcar {
+.dailyrace .racedetailcontent,
+.dailyrace .specifiedcar {
   padding-right: 5px;
   font-weight: 700;
   font-size: 14px;
@@ -72,7 +73,7 @@
 }
 
 .specifiedcar {
-  color: #fe2!important;
+  color: #fe2 !important;
 }
 
 small {
@@ -108,7 +109,9 @@ small {
   text-align: center;
 }
 
-.tyre.CM, .tyre.SM, .tyre.RM {
+.tyre.CM,
+.tyre.SM,
+.tyre.RM {
   color: #ff4;
   border: 2px solid #ff4;
 }
@@ -123,17 +126,22 @@ small {
   border: 2px solid #26b;
 }
 
-.tyre.CM, .tyre.SM, .tyre.RM {
+.tyre.CM,
+.tyre.SM,
+.tyre.RM {
   color: #ff4;
   border: 2px solid #ff4;
 }
 
-.tyre.CS, .tyre.SS, .tyre.RS {
+.tyre.CS,
+.tyre.SS,
+.tyre.RS {
   color: #f40;
   border: 2px solid #f40;
 }
 
-.dailyrace .racedetailcontent.bop, .dailyrace .racedetailcontent.spec {
+.dailyrace .racedetailcontent.bop,
+.dailyrace .racedetailcontent.spec {
   color: #fe2;
 }
 

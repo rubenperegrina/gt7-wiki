@@ -1,215 +1,215 @@
 .car-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .car.carsold {
-    background-color: #999;
+  background-color: #999;
 }
 
 .carsold {
-    border: 3px solid #000;
-    margin: 9px;
-    border-radius: 15px;
+  border: 3px solid #000;
+  margin: 9px;
+  border-radius: 15px;
 }
 
 .car {
-    // background-color: #d9dbdb;
-    background-color: #212529;
-    position: relative;
-    height: 220px;
-    min-width: 310px;
-    width: 310px;
-    margin: 10px;
-    flex: 0 0 29%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  // background-color: #d9dbdb;
+  background-color: #212529;
+  position: relative;
+  height: 220px;
+  min-width: 310px;
+  width: 310px;
+  margin: 10px;
+  flex: 0 0 29%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carlimited {
-    border: 3px solid black;
-    margin: 9px;
-    border-radius: 15px;
+  border: 3px solid black;
+  margin: 9px;
+  border-radius: 15px;
 }
 
 .carnormal {
-    border: 3px solid black;
-    margin: 9px;
-    border-radius: 15px;
+  border: 3px solid black;
+  margin: 9px;
+  border-radius: 15px;
 }
 
 .car .flag {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    // height: 16px;
-    width: 30px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  // height: 16px;
+  width: 30px;
 }
 
 .car .brand {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 70px;
-    border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 70px;
+  border-radius: 5px;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 strong {
-    color: #222;
-    font-weight: 700;
+  color: #222;
+  font-weight: 700;
 }
 
 .car .manufacturer {
-    font-family: 'Jaldi';
-    font-weight: 400;
-    font-size: 24px;
-    color: white;
-    position: absolute;
-    top: 10px;
-    left: 50px;
-    width: 280px;
+  font-family: "Jaldi";
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  width: 280px;
 }
 
 .car .credits {
-    font-weight: 700;
-    font-size: 26px;
-    position: absolute;
-    color: #000;
-    bottom: 20px;
-    right: 20px;
-    width: 282px;
-    text-align: right;
+  font-weight: 700;
+  font-size: 26px;
+  position: absolute;
+  color: #000;
+  bottom: 20px;
+  right: 20px;
+  width: 282px;
+  text-align: right;
 }
 
 .car .soldout {
-    font-weight: 700;
-    font-size: 32px;
-    color: #B00;
-    transform: rotate(-10deg);
-    margin: 24px 0px 0px 0px;
-    padding: 6px;
-    border: 5px solid #B00;
-    z-index: 1;
+  font-weight: 700;
+  font-size: 32px;
+  color: #b00;
+  transform: rotate(-10deg);
+  margin: 24px 0px 0px 0px;
+  padding: 6px;
+  border: 5px solid #b00;
+  z-index: 1;
 }
 
 .car .normal {
-    font-weight: 700;
-    font-size: 18px;
-    color: green;
-    position: absolute;
-    bottom: 55px;
-    right: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  color: green;
+  position: absolute;
+  bottom: 55px;
+  right: 20px;
 }
 
 .car .reward-text {
-    font-size: 8px;
-    color: #208ae7;
-    position: absolute;
-    bottom: 35px;
-    left: 6px;
-    text-align: center;
+  font-size: 8px;
+  color: #208ae7;
+  position: absolute;
+  bottom: 35px;
+  left: 6px;
+  text-align: center;
 }
 
 .car .reward-icon {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
 .car .reward-icon {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
 .car .cr {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 .car .credits {
-    font-weight: 700;
-    font-size: 26px;
-    position: absolute;
-    color: white;
-    bottom: 20px;
-    right: 20px;
-    width: 282px;
-    text-align: right;
+  font-weight: 700;
+  font-size: 26px;
+  position: absolute;
+  color: white;
+  bottom: 20px;
+  right: 20px;
+  width: 282px;
+  text-align: right;
 }
 
 .car .engineswap-text {
-    font-size: 8px;
-    color: #333;
-    position: absolute;
-    bottom: 35px;
-    left: 38px;
-    text-align: center;
+  font-size: 8px;
+  color: #333;
+  position: absolute;
+  bottom: 35px;
+  left: 38px;
+  text-align: center;
 }
 
 .car .engineswap-icon {
-    position: absolute;
-    bottom: 10px;
-    left: 40px;
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
 }
 
 .car .limited {
-    font-weight: 700;
-    font-size: 18px;
-    color: #D00;
-    position: absolute;
-    bottom: 55px;
-    right: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #d00;
+  position: absolute;
+  bottom: 55px;
+  right: 20px;
 }
 
 .car .days-remaining {
-    font-size: 11px;
-    color: #D00;
-    position: absolute;
-    bottom: 80px;
-    right: 20px;
+  font-size: 11px;
+  color: #d00;
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
 }
 
 .car .days-estimate {
-    font-size: 11px;
-    color: #777;
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
+  font-size: 11px;
+  color: #777;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
 }
 
 .car .name {
-    font-weight: 600;
-    font-size: 24px;
-    position: absolute;
-    color: white;
-    top: 50px;
-    left: 10px;
-    width: 300px;
+  font-weight: 600;
+  font-size: 24px;
+  position: absolute;
+  color: white;
+  top: 50px;
+  left: 10px;
+  width: 300px;
 }
 
 .data-update {
-    margin: 15px;
-    color: white;
-  }
-  
+  margin: 15px;
+  color: white;
+}
+
 .title {
-    color: white;
+  color: white;
 }
 
 .car .new {
-    font-size: 32px;
-    font-weight: 700;
-    color: #0487C4;
-    position: absolute;
-    bottom: 170px;
-    right: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0487c4;
+  position: absolute;
+  bottom: 170px;
+  right: 20px;
 }

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -12,14 +12,9 @@ import { faCar, faCarRear, faFlagCheckered, faGaugeHigh } from '@fortawesome/fre
   standalone: true,
   imports: [CommonModule, RouterModule, FontAwesomeModule, MatButtonToggleModule]
 })
-export class SelectorComponent implements OnInit {
+export class SelectorComponent {
   faCar = faCar;
   faGaugeHigh = faGaugeHigh;
   faCarRear = faCarRear;
   faFlagCheckered = faFlagCheckered;
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

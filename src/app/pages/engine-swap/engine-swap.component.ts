@@ -34,5 +34,4 @@ export class EngineSwapComponent implements OnInit {
       this.lastUpdate = res.last_update;
     })
   }
-
 }

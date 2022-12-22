@@ -1,37 +1,36 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { DailyRaceComponent } from './pages/daily-race/daily-race.component';
-import { EngineSwapComponent } from './pages/engine-swap/engine-swap.component';
-import { LegendCarsComponent } from './pages/legend-cars/legend-cars.component';
-import { UsedCarsComponent } from './pages/used-cars/used-cars.component';
+import { enableProdMode } from '@angular/core';
+import { Routes } from '@angular/router';
+import { environment } from '@env/environment';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: 'used-cars',
-    component: UsedCarsComponent,
-    title: 'Used cars'
+    title: 'Used cars',
+    loadComponent: () =>
+      import('../app/pages/used-cars/used-cars.component').then((c) => c.UsedCarsComponent),
   },
   {
     path: 'daily-race',
-    component: DailyRaceComponent,
-    title: 'Daily race'
+    title: 'Daily race',
+    loadComponent: () =>
+      import('../app/pages/daily-race/daily-race.component').then((c) => c.DailyRaceComponent),
   },
   {
     path: 'legend-cars',
-    component: LegendCarsComponent,
-    title: 'Legend cars'
+    title: 'Legend cars',
+    loadComponent: () =>
+      import('../app/pages/legend-cars/legend-cars.component').then((c) => c.LegendCarsComponent),
   },
   {
     path: 'engine-swap',
-    component: EngineSwapComponent,
-    title: 'Engine swap'
+    title: 'Engine swap',
+    loadComponent: () =>
+      import('../app/pages/engine-swap/engine-swap.component').then((c) => c.EngineSwapComponent),
   },
   { path: '', pathMatch: 'full', redirectTo: 'engine-swap' },
   { path: '**', pathMatch: 'full', redirectTo: 'engine-swap' },
 ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+if (environment.production) {
+  enableProdMode();
+}

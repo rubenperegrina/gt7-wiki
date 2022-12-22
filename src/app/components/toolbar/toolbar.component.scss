@@ -1,10 +1,17 @@
 mat-toolbar {
-    // background: linear-gradient(45deg, #0a267c 0%, #e00d23 100%);
-    background: linear-gradient(151deg, #0C327C 0%,#0d61bc 35%, #000000 50%, #C70220 70%,#860519 100%);
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
+  // background: linear-gradient(45deg, #0a267c 0%, #e00d23 100%);
+  background: linear-gradient(
+    151deg,
+    #0c327c 0%,
+    #0d61bc 35%,
+    #000000 50%,
+    #c70220 70%,
+    #860519 100%
+  );
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 mat-toolbar h1 {
-    color: white;
+  color: white;
 }
