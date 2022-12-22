@@ -1,5 +1,5 @@
 {
-    "last_update": "2022-11-04",
+    "last_update": "2022-12-22",
     "engine_swaps": [
       {
         "engine": "R5-20vT-Quattro-Pikes",
@@ -61,6 +61,7 @@
         "source_car": "Dodge Charger SRT Hellcat '15",
         "available_cars": [
           "Dodge Challenger R/T '70",
+          "Jeep Willys ‘45",
           "Plymouth Superbird '70"
         ]
       },
@@ -69,6 +70,13 @@
         "source_car": "Ferrari 458 Italia '09",
         "available_cars": [
           "Alfa Romeo 4C '14"
+        ]
+      },
+      {
+        "engine": "F140B-Enzo",
+        "source_car": "Ferrari Enzo Ferrari ‘02",
+        "available_cars": [
+          "Ferrari F40 ‘92"
         ]
       },
       {
@@ -97,6 +105,7 @@
         "engine": "K20C1-Civic-'20",
         "source_car": "Honda Civic Type R Limited Edition (FK8) '20",
         "available_cars": [
+          "Abarth 595 SS ‘70",
           "Honda Beat '91",
           "Honda Civic Type R (EK) '98",
           "Honda Integra Type R (DC2) '98",
@@ -109,6 +118,13 @@
         "available_cars": [
           "Toyota Crown Athlete G '13",
           "Toyota Tundra TRD Pro '19"
+        ]
+      },
+      {
+        "engine": "L539-Aventador-SV",
+        "source_car": "Lamborghini Aventador LP750-4 SV 15",
+        "available_cars": [
+          "Lamborghini Countach 25th Anniversary ‘88"
         ]
       },
       {
@@ -156,6 +172,13 @@
         "available_cars": [
           "Volkswagen 1200 '66",
           "Volkswagen Sambabus Typ 2 '62"
+        ]
+      },
+      {
+        "engine": "M97/80-911",
+        "source_car": "Porsche 911 991 RSR ‘17",
+        "available_cars": [
+          "Porsche 911 930 Turbo ‘81"
         ]
       },
       {
